@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet"/>
+      <!-- Boxicons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+      <!-- Glide js -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">  
+       <!-- google fonts-->
+      <link rel="stylesheet" href="./css/styles.css" />
+      <!-- icon library(star)-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Your Cart</title>
+  
+</head>
+<body>
+<!-- Navigation -->
+<!--Nav 1 -->
+<div class="top-nav">
+    <div class="container d-flex">
+      <p> </p>
+      <ul class="d-flex">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Nav 2-->
+  <div class="navigation">
+    <div class="nav-center container d-flex">
+    <a href="index.html" class="logo"><h1>Tease_Trendz</h1></a>
+
+      <ul class="nav-list d-flex">
+        <li class="nav-item">
+          <a href="index.php" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="product2.html" class="nav-link">Trends</a>
+        </li>
+        <li class="nav-item">
+        <a href="product.html" class="nav-link">Shop</a>
+      </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact Us</a>
+        </li>
+      </ul>
+
+      <div class="icons d-flex">
+        <a href="login.html" class="icon">
+          <i class="bx bx-user"></i>
+        </a>
+        <div class="icon" >
+          <i class="bx bx-heart"></i>
+          <span class="d-flex">0</span>
+        </div>
+        <a href="cart.html" class="icon">
+          <i class="bx bx-cart"></i>
+          <span class="d-flex">0</span>
+        </a>
+      </div>
+
+      <div class="hamburger">
+        <i class="bx bx-menu-alt-left"></i>
+      </div>
+    </div>
+  </div>
+
+<!-- Cart Items -->
+<div class="container cart">
+  <table >
+      <tr >
+          <th>Product</th>
+          <th style="padding-left:520px;">Quantity</th>
+          <th style="padding-right: 140px;">per item cost</th>
+          <th >Subtotal</th>
+      </tr>
+    </table>
+      <!-- Product row 1 -->
+      <div class="cart_price">
+
+        <table >
+          <tr>
+          <td>
+              <div class="cart-info">
+                <img src="./images/Products/prod2.jpg" alt="" />
+                  <div>
+                    <p>Men's fancy <br> blue coat</p>
+                    <span>Price: $30.00</span> <br />
+                    <a href="#" class="remove-link">remove</a>
+                  </div>
+                </div>
+              </td>
+              <td><input type="number" value="1" min="1" /></td>
+              <td>$30.00</td>
+              <td>$30.00</td>
+            </tr>
+            <!-- Product row 2 -->
+            <tr>
+              <td>
+                <div class="cart-info">
+                  <img src="./images/Products/prod4.jpg" alt="" />
+                  <div>
+                    <p>cream -shirt <br> full sleeve</p>
+                    <span>Price: $50.00</span> <br />
+                    <a href="#" class="remove-link">remove</a>
+                  </div>
+              </div>
+          </td>
+          <td><input type="number" value="1" min="1" /></td>
+          <td>$50.00</td>
+          <td>$50.00</td>
+      </tr>
+      <!-- Product row 3 -->
+      <tr>
+          <td>
+              <div class="cart-info">
+                <img src="./images/Products/prod5.jpg" alt="" />
+                  <div>
+                    <p>Latest design <br> sofa</p>
+                    <span>Price: $40.00</span> <br />
+                    <a href="#" class="remove-link">remove</a>
+                  </div>
+                </div>
+              </td>
+          <td><input type="number" value="1" min="1" f/></td>
+          <td>$40.00</td>
+          <td>$40.00</td>
+        </tr>
+      <!-- Product row 4 -->
+      <tr>
+        <td>
+              <div class="cart-info">
+                  <img src="./images/Products/prod7.jpg" alt="" />
+                  <div>
+                    <p>Twin Teddy <br> bear</p>
+                    <span>Price: $60.00</span> <br />
+                    <a href="#" class="remove-link">remove</a>
+                  </div>
+              </div>
+            </td>
+            <td><input type="number" value="1" min="1" /></td>
+            <td>$60.00</td>
+            <td>$60.00</td>
+          </tr>
+          <!-- Product row 5 -->
+          <tr>
+          <td>
+              <div class="cart-info">
+                <img src="./images/product-5.jpg" alt="" />
+                  <div>
+                      <p>Black Over-sized <br>Hoodie</p>
+                      <span>Price: $70.00</span> <br />
+                      <a href="#" class="remove-link">remove</a>
+                  </div>
+              </div>
+          </td>
+          <td><input type="number" value="1" min="1" /></td>
+          <td>$70.00</td>
+          <td>$70.00</td>
+        </tr>
+      </table>
+    </div>
+      <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$250</td>
+            </tr>
+        </table>
+        <a href="checkout.html" class="checkout btn">Proceed To Checkout</a>
+    </div>
+</div>
+
+<!-- Latest Products -->
+<section class="section featured">
+    <!-- Add your latest products section here -->
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="row">
+      <div class="col d-flex">
+        <h4>INFORMATION</h4>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="terms.html">Term & Conditions</a>
+      </div>
+      <div class="col d-flex">
+        <h4>USEFUL LINK</h4>
+        <a href="product.html">Online Store</a>
+        <a href="about.html">Customer Services</a>
+        <a href="faq.html">FAQs</a>
+        <a href="top.html">Top Brands</a>
+      </div>
+      <div class="col d-flex">
+        <span><i class='bx bxl-facebook-square'></i></span>
+        <span><i class='bx bxl-instagram-alt' ></i></span>
+        <span><i class='bx bxl-github' ></i></span>
+        <span><i class='bx bxl-twitter' ></i></span>
+        <span><i class='bx bxl-pinterest' ></i></span>
+      </div>
+    </div>
+  </footer>
+
+<!-- Custom Script -->
+<script src="./js/index.js" defer></script>
+<script src="./js/cart.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Glide js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/search.css">
+     <!-- icon library(star)-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tease_Trendz</title>
+</head>
+
+<body>
+      <!-- Header -->
+   <header class="header" id="header">
+    <!--Nav 1 -->
+    <div class="top-nav">
+      <div class="container d-flex">
+        <p> </p>
+        <ul class="d-flex">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+      <!-- Nav 2-->
+    <div class="navigation">
+      <div class="nav-center container d-flex">
+      <a href="index.html" class="logo"><h1>Tease_Trendz</h1></a>
+
+        <ul class="nav-list d-flex">
+          <li class="nav-item">
+            <a href="index.php" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="product2.html" class="nav-link">Trends</a>
+          </li>
+          <li class="nav-item">
+          <a href="product.html" class="nav-link">Shop</a>
+        </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+        
+
+                <div class="icons d-flex">
+                    <a href="login.html" class="icon">
+                        <i class="bx bx-user"></i>
+                    </a>
+                   
+                    <form action="/form/submit" method="GET">
+                      <input type="text" name="text" class="search" placeholder="Search here!" id="myInput" onkeyup="searchFunc()">
+                      <input type="submit" name="submit" class="submit" value="Search">
+                    </form>
+                    <div class="icon">
+                        <i class="bx bx-heart"></i>
+                        <span class="d-flex">0</span>
+                    </div>
+                    <a href="cart.html" class="icon">
+                      <i class="bx bx-cart"></i>
+                      <span class="d-flex">0</span>
+                  </a>
+                  <a href="logout.php" class ="icon">
+                     <i class="bx bx-log-out"></i>
+                  </a>
+                </div>
+            </div>
+           <!-- All Products -->
+           <section class="section all-products" id="products">
+            <div class="top container">
+              <h1>Fresh Arrivals</h1>
+              <form>
+                <select>
+                  <option value="1">Defualt Sorting</option>
+                  <option value="2">Sort By Price</option>
+                  <option value="3">Sort By Popularity</option>
+                  <option value="4">Sort By Sale</option>
+                  <option value="5">Sort By Rating</option>
+                </select>
+                <span><i class="bx bx-chevron-down"></i></span>
+              </form>
+            </div>
+            <div class="product-center" id="product_center">
+              <div class="product-item">
+                <div class="overlay">
+                  <a href="productDetails.html" class="product-thumb">
+                    <img src="./images/Products/prod1.webp" alt="" />
+                  </a>
+                </div>
+                <div class="product-info">
+                  <span>WOMEN'S CLOTHING</span>
+                  <a href="productDetails.html" class="search_prod">Floral printed maxi</a>
+                  <div class="star">
+                    <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+                  </div>
+                  <h4>Rs. 900</h4>
+                </div>
+                <ul class="icons">
+                  <li><i class="bx bx-heart"></i></li>
+                  <li><i class="bx bx-cart"></i></li>
+                  <li><i class="bx bx-share bx-flip-horizontal"></i></li>
+                </ul>
+              </div>
+              <div class="product-item">
+                <div class="overlay">
+                  <a href="" class="product-thumb">
+                    <img src="./images/Products/prod2.jpg" alt="" />
+                  </a>
+                  <!-- <span class="discount">50%</span> -->
+                </div>
+      
+                <div class="product-info">
+                  <span>MEN'S CLOTHING</span>
+                  <a href="" class="search_prod">Men fancy blue coat</a>
+                  <div class="star">
+                    <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+                  </div>
+                  <h4>Rs.1100</h4>
+                </div>
+                <ul class="icons">
+                  <li><i class="bx bx-heart"></i></li>
+                  <li><i class="bx bx-cart"></i></li>
+                  <li><i class="bx bx-share bx-flip-horizontal"></i></li>
+                </ul>
+              </div>
+              <div class="product-item">
+                <div class="overlay">
+                  <a href="" class="product-thumb">
+                    <img src="./images/Products/prod3.avif" alt=""  id='image_X' />
+                  </a>
+                </div>
+                <div class="product-info">
+                  <span>WOMEN'S CLOTHING</span>
+                  <a href="" class="search_prod">Printed shiffon saree</a>
+                  <div class="star">
+                    <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+                  </div>
+                  <h4>Rs.1500</h4>
+                </div>
+                <ul class="icons">
+                  <li><i class="bx bx-heart"></i></li>
+                  <li><i class="bx bx-cart"></i></li>
+                  <li><i class="bx bx-share bx-flip-horizontal"></i></li>
+                </ul>
+              </div>
+              <div class="product-item">
+                <div class="overlay">
+                  <a href="" class="product-thumb">
+                    <img src="./images/Products/prod4.jpg" alt="" />
+                  </a>
+                  <!-- <span class="discount">50%</span> -->
+                </div>
+                <div class="product-info">
+                  <span>MEN'S CLOTHING</span>
+                  <a href="" class="search_prod">cream t-shirt full-sleeve</a>
+                  <div class="star">
+                    <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
+              <span class="fa fa-star"></span>
+                  </div>
+                  <h4>Rs.499</h4>
+                </div>
+                <ul class="icons">
+                  <li><i class="bx bx-heart"></i></li>
+                  <li><i class="bx bx-cart"></i></li>
+                  <li><i class="bx bx-share bx-flip-horizontal"></i></li>
+                </ul>
+              </div>
+              <div class="product-item">
+                <div class="overlay">
+                  <a href="" class="product-thumb">
+                    <img src="./images/Products/prod26.webp" alt="" />
+                  </a>
+                </div>
+                <div class="product-info">
+                  <span>ACCESSORIES</span>
+                  <a href="" class="search_prod">Fashionable jhumkas</a>
+                  <div class="star">
+                    <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
+              <span class="fa fa-star "></span>
+                  </div>
+                  <h4>Rs.399</h4>
+                </div>
+                <ul class="icons">
+                  <li><i class="bx bx-heart"></i></li>
+                  <li><i class="bx bx-cart"></i></li>
+                  <li><i class="bx bx-share bx-flip-horizontal"></i></li>
+                </ul>
+              </div>
+              <div class="product-item">
+                <div class="overlay">
+                  <a href="" class="product-thumb">
+                    <img src="./images/Products/prod27.webp" alt="" />
+                  </a>
+                </div>
+                <div class="product-info">
+                  <span>FASHION</span>
+                  <a href="" class="search_prod">Men gray shoes comfortable</a>
+                  <div class="star">
+                    <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+                  </div>
+                  <h4>Rs.869</h4>
+                </div>
+                <ul class="icons">
+                  <li><i class="bx bx-heart"></i></li>
+                  <li><i class="bx bx-cart"></i></li>
+                  <li><i class="bx bx-share bx-flip-horizontal"></i></li>
+                </ul>
+              </div>
+              <div class="product-item">
+                <div class="overlay">
+                  <a href="" class="product-thumb">
+                    <img src="./images/Products/prod7.jpg" alt="" />
+                  </a>
+                  <!-- <span class="discount">50%</span> -->
+                </div>
+                <div class="product-info">
+                  <span>STUFF-TOYS</span>
+                  <a href="" class="search_prod">Twin teddy bear</a>
+                  <div class="star">
+                    <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
+              <span class="fa fa-star "></span>
+                  </div>
+                  <h4>Rs.300</h4>
+                </div>
+                <ul class="icons">
+                  <li><i class="bx bx-heart"></i></li>
+                  <li><i class="bx bx-cart"></i></li>
+                  <li><i class="bx bx-share bx-flip-horizontal"></i></li>
+                </ul>
+              </div>
+              <div class="product-item">
+                <div class="overlay">
+                  <a href="" class="product-thumb">
+                    <img src="./images/Products/prod8.jpeg" alt="" />
+                  </a>
+                </div>
+                <div class="product-info">
+                  <span>FASHION</span>
+                  <a href="" class="search_prod">Black-silver pencil heels</a>
+                  <div class="star">
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star "></span>
+                  </div>
+                  <h4>Rs.800</h4>
+                </div>
+                <ul class="icons">
+                  <li><i class="bx bx-heart"></i></li>
+                  <li><i class="bx bx-cart"></i></li>
+                  <li><i class="bx bx-share bx-flip-horizontal"></i></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="pagination">
+            <div class="container">
+              <span><a href="search.html">1</a></span> <span><a href="product3.html">2</a></span> <span><a href="product4.html">3</a></span> <span><a href="product5.html">4</a></span>
+              <span><i class="bx bx-right-arrow-alt"></i></span>
+            </div>
+          </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row">
+        <div class="col d-flex">
+          <h4>INFORMATION</h4>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="terms.html">Term & Conditions</a>
+        </div>
+        <div class="col d-flex">
+          <h4>USEFUL LINK</h4>
+          <a href="product.html">Online Store</a>
+          <a href="about.html">Customer Services</a>
+          <a href="faq.html">FAQs</a>
+          <a href="top.html">Top Brands</a>
+        </div>
+        <div class="col d-flex">
+          <span><i class="bx bxl-facebook-square"></i></span>
+          <span><i class="bx bxl-instagram-alt"></i></span>
+          <span><i class="bx bxl-github"></i></span>
+          <span><i class="bx bxl-twitter"></i></span>
+          <span><i class="bx bxl-pinterest"></i></span>
+        </div>
+      </div>
+    </footer>
+                
+            </div>
+            <script  >
+              const searchFunc = () => {
+                let filter = document.getElementById('myInput').value.toUpperCase();
+                let elements = document.querySelectorAll('.product-info');
+                let elem2=document.querySelectorAll('.product-item');
+                let l=document.getElementsByClassName("search_prod");
+             
+            console.log(l.length);
+                for (var i = 0; i < l.length; i++) {
+                    let a = elements[i].querySelector('.search_prod');
+                    let value =a.innerHTML.toUpperCase() || a.innerText.toUpperCase() ||a.textContent.toUpperCase();
+                   
+                 if(value.indexOf(filter)>-1)
+                 {
+                  elements[i].style.display="";
+                  elem2[i].style.display="";
+                
+              }  else
+              {
+                elements[i].style.display="none";
+                elem2[i].style.display="none";
+            
+              }
+                }  
+            }
+                      
+          </script>
+</body>
+
+</html>
