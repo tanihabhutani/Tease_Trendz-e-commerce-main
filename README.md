@@ -47,8 +47,3 @@
     <li>Fork this project into the "htdocs" directory of your XAMPP installation (usually located at "C:\xampp\htdocs").</li>
     <li>After setup, access the project by navigating to "localhost/ecommerce" in your web browser.</li>
   </ol>
-<h1>Project Collaborators:</h1>
-  <ul>
-    <li> <a href="https://github.com/kingm0">Mukul Singhal</a></li>
-    <li ><a href="https://github.com/ria190">Ria Chugh</a></li>
-  </ul>
